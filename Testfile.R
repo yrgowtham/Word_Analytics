@@ -22,6 +22,9 @@ watsapp$author_column<-temp
 temp<-sub("\\S+\\s+\\S+\\s+\\S+\\s+\\S+\\s+", '', watsapp$text_column)
 watsapp$text_column_new<-temp
 
+
+#Test to merge for develop
+
 #final dataset :
 new_Dataset<-watsapp[complete.cases(watsapp), ]
 new_Dataset$date_column<-NULL
